@@ -2,7 +2,7 @@ This is a project for personal usage. Or for anyone interested.
 
 I will try to document my development and usage to the best of my abilities.
 
-#Issues and how they were resolved:
+# Issues and how they were resolved #:
 
 1. PagerViewer was not installed properly and so the build failed with: **Task :react-native-pager-view:compileDebugKotlin FAILED**
 
