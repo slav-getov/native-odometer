@@ -1,15 +1,12 @@
 import React from 'react';
 import {Pressable, View, Text, StyleSheet} from 'react-native';
 import {PagerCarouselButtonPropType} from '../../types/PagerCarouselButtonPropType';
-let fontSizeDynamic = 10;
+
 const PagerCarouselButton = ({buttonText}: PagerCarouselButtonPropType) => {
   return (
     <Pressable
-      onHoverIn={() => {
-        fontSizeDynamic += 10;
-      }}
-      onHoverOut={() => {
-        fontSizeDynamic -= 10;
+      onPress={() => {
+        console.log('pressed');
       }}>
       <View style={styles.buttonWrapper}>
         <Text style={styles.buttonTextFill}>{buttonText}</Text>
@@ -19,14 +16,16 @@ const PagerCarouselButton = ({buttonText}: PagerCarouselButtonPropType) => {
 };
 const styles = StyleSheet.create({
   buttonWrapper: {
-    borderRadius: 4,
+    borderRadius: 10,
     padding: 5,
-    border: 2,
-    borderColor: 'gray',
-    fontSize: fontSizeDynamic,
+    borderWidth: 2,
+    borderColor: 'white',
+    fontSize: 10,
+    width: '40%',
   },
   buttonTextFill: {
     color: 'white',
+    textAlign: 'center',
   },
 });
 export default PagerCarouselButton;

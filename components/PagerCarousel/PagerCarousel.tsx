@@ -15,6 +15,8 @@ const PagerCarousel = () => {
 const styles = StyleSheet.create({
   pageViewSingleCard: {
     padding: 20,
+    borderWidth: 3,
+    borderColor: 'gray',
   },
   pagerViewDataText: {
     color: 'white',
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   pagerViewContainer: {
-    flex: 3,
+    flex: 4,
     alignSelf: 'stretch',
   },
 });
