@@ -10,12 +10,17 @@ import {View, StyleSheet} from 'react-native';
 
 import GreetingView from './components/GreetingView/GreetingView';
 import PagerCarousel from './components/PagerCarousel/PagerCarousel';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+const Stack = createNativeStackNavigator();
 function App(): JSX.Element {
   return (
-    <View style={styles.backgroundContainer}>
-      <GreetingView initialText="Choose template" />
-      <PagerCarousel />
-    </View>
+    <NavigationContainer>
+      <View style={styles.backgroundContainer}>
+        <GreetingView initialText="Choose template" />
+        <PagerCarousel />
+      </View>
+    </NavigationContainer>
   );
 }
 const styles = StyleSheet.create({
