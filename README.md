@@ -14,4 +14,4 @@ https://github.com/software-mansion/react-native-screens/issues/1369 By followin
 ### Libraries used:
 
 0. This list will grow (I hope)
-1. PagerViewer
+1. [PagerViewer](https://github.com/callstack/react-native-pager-view)
